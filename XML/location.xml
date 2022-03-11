@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE location SYSTEM "location.dtd">
+<location id=1 dateOpened="02/19/1999">
+    <address>39204 Street</address>
+    <city>San Luis Obispo</city>
+    <country>United States</country>
+    <owner>
+        <name>John Smith</name>
+        <startDate>12/24/2000</startDate>
+        <endDate>12/24/2000</endDate>
+    </owner>
+    <locationManager>
+        <employeeId>1</employeeId>
+        <startDate>02/04/2018</startDate>
+        <endDate>12/24/2000</endDate>
+    </locationManager>
+    <receipts>
+        <receipt>
+           <date>02/04/2022</date>
+            <customerId>2</customerId>
+            <purchasedItem>apple</purchasedItem>
+              <purchasedItem>crackers</purchasedItem>
+        </receipt>
+        <receipt>
+            <date>02/04/2022</date>
+            <customerId>1</customerId>
+            <purchasedItem>apple</purchasedItem>
+        </receipt>
+    </receipts>
+    <inventory>
+        <packagedGoods>
+            <good quantity=5 currentPrice=10.00>
+                <name>crackers</name>
+            </good>
+            <good quantity=5 currentPrice=10.00>
+                <name>crackers</name>
+            </good>
+        </packagedGoods>
+        <ingredients>
+            <ingredient quantity=5 currentPrice=10.00>
+                <name>apple</name>
+            </ingredient>
+            <ingredient quantity=5 currentPrice=10.00>
+                <name>orange</name>
+            </ingredient>
+            <ingredient quantity=5 currentPrice=10.00>
+                <name>banana</name>
+            </ingredient>
+        </ingredients>
+    </inventory>
+</location>

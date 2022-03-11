@@ -1,0 +1,34 @@
+<!DOCTYPE location [
+<!ELEMENT location (address, city, country, owner+, locationManager+, receipts, inventory)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT owner (name, startDate, endDate)>
+<!ELEMENT locationManager (employeeId, startDate, endDate)>
+<!ELEMENT receipts (receipt*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT startDate (#PCDATA)>
+<!ELEMENT endDate (#PCDATA)>
+<!ELEMENT employeeId (#PCDATA)>
+<!ELEMENT receipt (date, customerId, purchasedItem+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT customerId (#PCDATA)>
+<!ELEMENT purchasedItem (#PCDATA)>
+<!ELEMENT inventory (packagedGoods, ingredients)>
+<!ELEMENT packagedGoods (good*)>
+<!ELEMENT good (name)>
+<!ELEMENT ingredients (ingredient)>
+<!ELEMENT ingredient (name)>
+<!ATTLIST location
+  id ID #REQUIRED
+  dateOpened #PCDATA #REQUIRED
+>
+<!ATTLIST good
+  quantity #PCDATA #REQUIRED
+  currentPrice #PCDATA #REQUIRED
+>
+<!ATTLIST ingredient
+  quantity #PCDATA #REQUIRED
+  currentPrice #PCDATA #REQUIRED
+>
+]>
