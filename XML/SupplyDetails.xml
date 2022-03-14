@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupplyDetails>
+    <Supplier>
+        <supplierId>1234567</supplierId>
+        <supplierAddress>1 Grand Ave, San Luis Obispo, CA, 93405</supplierAddress>
+    </Supplier>
+    <SuppliedGoods>
+        <SuppliedPackagedGoods>
+            <packagedGoodId>111222</packagedGoodId>
+            <name>Tumeric Shot</name>
+            <quantity>50</quantity>
+        </SuppliedPackagedGoods>
+        <SuppliedPackagedGoods>
+            <packagedGoodId>111333</packagedGoodId>
+            <name>Belgium Waffle</name>
+            <quantity>20</quantity>
+        </SuppliedPackagedGoods>
+        <SuppliedIngredients>
+            <ingredientID>1212121</ingredientID>
+            <name>Banana</name>
+            <quantity>50</quantity>
+        </SuppliedIngredients>
+        <SuppliedIngredients>
+            <ingredientID>1313131</ingredientID>
+            <name>Frozen Blueberries</name>
+            <quantity>20</quantity>
+        </SuppliedIngredients>
+        <SuppliedIngredients>
+            <ingredientID>1414141</ingredientID>
+            <name>Frozen Mango</name>
+            <quantity>30</quantity>
+        </SuppliedIngredients>
+    </SuppliedGoods>
+    <Delivered>true</Delivered>
+    <LocationRef>locationRef</LocationRef>
+</SupplyDetails>
