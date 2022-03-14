@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SupplyDetails [
+        <!ELEMENT SupplyDetails (Supplier|SuppliedGoods|Delivered|LocationRef)*>
+        <!ELEMENT Supplier (supplierId|supplierAddress)*>
+        <!ELEMENT supplierId (#PCDATA)>
+        <!ELEMENT supplierAddress (#PCDATA)>
+        <!ELEMENT SuppliedGoods (SuppliedPackagedGoods|SuppliedIngredients)*>
+        <!ELEMENT SuppliedPackagedGoods (packagedGoodId|name|quantity)*>
+        <!ELEMENT packagedGoodId (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT quantity (#PCDATA)>
+        <!ELEMENT SuppliedIngredients (ingredientID|name|quantity)*>
+        <!ELEMENT ingredientID (#PCDATA)>
+        <!ELEMENT Delivered (#PCDATA)>
+        <!ELEMENT LocationRef (#PCDATA)>
+        ]>
