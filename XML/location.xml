@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<!DOCTYPE location SYSTEM "location.dtd">
-<location id=1 dateOpened="02/19/1999">
+<location id="1" dateOpened="02/19/1999">
     <address>39204 Street</address>
     <city>San Luis Obispo</city>
     <country>United States</country>
@@ -29,21 +27,21 @@
     </receipts>
     <inventory>
         <packagedGoods>
-            <good quantity=5 currentPrice=10.00>
+            <good quantity="5" currentPrice="10.00">
                 <name>crackers</name>
             </good>
-            <good quantity=5 currentPrice=10.00>
+            <good quantity="5" currentPrice="10.00">
                 <name>crackers</name>
             </good>
         </packagedGoods>
         <ingredients>
-            <ingredient quantity=5 currentPrice=10.00>
+            <ingredient quantity="5" currentPrice="10.00">
                 <name>apple</name>
             </ingredient>
-            <ingredient quantity=5 currentPrice=10.00>
+            <ingredient quantity="5" currentPrice="10.00">
                 <name>orange</name>
             </ingredient>
-            <ingredient quantity=5 currentPrice=10.00>
+            <ingredient quantity="5" currentPrice="10.00">
                 <name>banana</name>
             </ingredient>
         </ingredients>
