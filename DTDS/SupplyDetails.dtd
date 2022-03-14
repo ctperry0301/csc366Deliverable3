@@ -13,4 +13,6 @@
         <!ELEMENT ingredientID (#PCDATA)>
         <!ELEMENT Delivered (#PCDATA)>
         <!ELEMENT LocationRef (#PCDATA)>
+        <!ATTLIST LocationRef
+                ref CDATA #REQUIRED>
         ]>
