@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employees [
+        <!ELEMENT Employees (Employee)*>
+        <!ELEMENT Employee (employeeId|firstName|lastName|startDate|SSN|Paycheck|Shift|LocationManagerRef)*>
+        <!ELEMENT employeeId (#PCDATA)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+        <!ELEMENT startDate (#PCDATA)>
+        <!ELEMENT SSN (#PCDATA)>
+        <!ELEMENT Paycheck (paycheckId|StartDate|EndDate|Hours|PayRate)*>
+        <!ELEMENT paycheckId (#PCDATA)>
+        <!ELEMENT StartDate (#PCDATA)>
+        <!ELEMENT EndDate (#PCDATA)>
+        <!ELEMENT Hours (#PCDATA)>
+        <!ELEMENT PayRate (#PCDATA)>
+        <!ELEMENT Shift (shiftId|Date|StartTime|EndTime|Worked)*>
+        <!ELEMENT shiftId (#PCDATA)>
+        <!ELEMENT Date (#PCDATA)>
+        <!ELEMENT StartTime (#PCDATA)>
+        <!ELEMENT EndTime (#PCDATA)>
+        <!ELEMENT Worked (#PCDATA)>
+        <!ELEMENT LocationManagerRef (#PCDATA)>
+        <!ATTLIST LocationManagerRef
+                ref CDATA #REQUIRED>
+        ]>
+<Employees>
+    <Employee>
+        <employeeId>000001</employeeId>
+        <firstName>Terry</firstName>
+        <lastName>Perez</lastName>
+        <startDate>11/29/2021</startDate>
+        <SSN>111-12-4444</SSN>
+        <Paycheck>
+            <paycheckId>111111</paycheckId>
+            <StartDate>11/29/2021</StartDate>
+            <EndDate>12/12/2021</EndDate>
+            <Hours>40</Hours>
+            <PayRate>18</PayRate>
+        </Paycheck>
+        <Paycheck>
+            <paycheckId>111112</paycheckId>
+            <StartDate>12/13/2021</StartDate>
+            <EndDate>12/26/2021</EndDate>
+            <Hours>40</Hours>
+            <PayRate>18</PayRate>
+        </Paycheck>
+        <Shift>
+            <shiftId>222222</shiftId>
+            <Date>12/14/2021</Date>
+            <StartTime>9:00AM</StartTime>
+            <EndTime>5:00PM</EndTime>
+            <Worked>true</Worked>
+        </Shift>
+        <Shift>
+            <shiftId>222223</shiftId>
+            <Date>12/28/2021</Date>
+            <StartTime>9:00AM</StartTime>
+            <EndTime>5:00PM</EndTime>
+            <Worked>false</Worked>
+        </Shift>
+        <LocationManagerRef ref="/location/manager"></LocationManagerRef>
+    </Employee>
+    <Employee>
+        <employeeId>000002</employeeId>
+        <firstName>Joe</firstName>
+        <lastName>Madre</lastName>
+        <startDate>11/22/2021</startDate>
+        <SSN>222-13-5555</SSN>
+        <Paycheck>
+            <paycheckId>111113</paycheckId>
+            <StartDate>11/22/2021</StartDate>
+            <EndDate>12/5/2021</EndDate>
+            <Hours>40</Hours>
+            <PayRate>20</PayRate>
+        </Paycheck>
+        <Shift>
+            <shiftId>222224</shiftId>
+            <Date>11/24/2021</Date>
+            <StartTime>9:00AM</StartTime>
+            <EndTime>5:00PM</EndTime>
+            <Worked>true</Worked>
+        </Shift>
+        <LocationManagerRef ref="/location/locationManager"></LocationManagerRef>
+    </Employee>
+</Employees>
