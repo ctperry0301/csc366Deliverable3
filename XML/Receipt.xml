@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE receipt [
+    <!ELEMENT receipt (purchasedGoods, locationRef, customer)>
+    <!ATTLIST receipt
+    id ID #REQUIRED>
+    <!ELEMENT purchasedGoods (purchasedGood)+>    
+    <!ELEMENT purchasedGood (name, quantity, purchasePrice)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT quantity (#PCDATA)>
+    <!ELEMENT purchasePrice (#PCDATA)>
+    <!ELEMENT locationRef (#PCDATA)>
+    <!ENTITY locationRef SYSTEM "location.xml" >
+    <!ELEMENT customer (firstName, lastName)>
+    <!ATTLIST customer
+    id ID #REQUIRED>
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+]>
+<receipt id="R1">
+    <purchasedGoods>
+        <purchasedGood>
+            <name>Strawberry Smoothie</name>
+            <quantity>3</quantity>
+            <purchasePrice>33</purchasePrice>
+        </purchasedGood>
+        <purchasedGood>
+            <name>Everything Bagel</name>
+            <quantity>1</quantity>
+            <purchasePrice>12</purchasePrice>
+        </purchasedGood>
+    </purchasedGoods>
+    <locationRef>
+        &locationRef;
+    </locationRef>
+    <customer id="C1">
+        <firstName>Jane</firstName>
+        <lastName>Doe</lastName>
+    </customer>
+</receipt>
