@@ -9,7 +9,7 @@
     <!ELEMENT quantity (#PCDATA)>
     <!ELEMENT purchasePrice (#PCDATA)>
     <!ELEMENT locationRef (#PCDATA)>
-    <!ENTITY locationRef SYSTEM "location.xml" >
+    <!ENTITY locationRef SYSTEM "Location.xml" >
     <!ELEMENT customer (firstName, lastName)>
     <!ATTLIST customer
     id ID #REQUIRED>

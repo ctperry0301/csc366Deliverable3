@@ -1,4 +1,36 @@
-<location id="1" dateOpened="02/19/1999">
+<?xml version="1.0"?>
+<!DOCTYPE Location [
+        <!ELEMENT Location (address|city|country|owner|locationManager|receipts|inventory)*>
+        <!ATTLIST Location
+                id CDATA #REQUIRED
+                dateOpened CDATA #REQUIRED>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT owner (name|startDate|endDate)*>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT startDate (#PCDATA)>
+        <!ELEMENT endDate (#PCDATA)>
+        <!ELEMENT locationManager (employeeId|startDate|endDate)*>
+        <!ELEMENT employeeId (#PCDATA)>
+        <!ELEMENT receipts (receipt)*>
+        <!ELEMENT receipt (date|customerId|purchasedItem)*>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT customerId (#PCDATA)>
+        <!ELEMENT purchasedItem (#PCDATA)>
+        <!ELEMENT inventory (packagedGoods|ingredients)*>
+        <!ELEMENT packagedGoods (good)*>
+        <!ELEMENT good (name)*>
+        <!ATTLIST good
+                currentPrice CDATA #REQUIRED
+                quantity CDATA #REQUIRED>
+        <!ELEMENT ingredients (ingredient)*>
+        <!ELEMENT ingredient (name)*>
+        <!ATTLIST ingredient
+                currentPrice CDATA #REQUIRED
+                quantity CDATA #REQUIRED>
+]>
+<Location id="1" dateOpened="02/19/1999">
     <address>39204 Street</address>
     <city>San Luis Obispo</city>
     <country>United States</country>
@@ -46,4 +78,4 @@
             </ingredient>
         </ingredients>
     </inventory>
-</location>
+</Location>

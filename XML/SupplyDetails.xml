@@ -1,36 +1,54 @@
 <?xml version="1.0"?>
+<!DOCTYPE SupplyDetails [
+        <!ELEMENT SupplyDetails (supplier|suppliedGoods|delivered|locationRef)*>
+        <!ELEMENT supplier (supplierId|supplierAddress)*>
+        <!ELEMENT supplierId (#PCDATA)>
+        <!ELEMENT supplierAddress (#PCDATA)>
+        <!ELEMENT suppliedGoods (suppliedPackagedGoods|suppliedIngredients)*>
+        <!ELEMENT suppliedPackagedGoods (packagedGoodId|name|quantity)*>
+        <!ELEMENT packagedGoodId (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT quantity (#PCDATA)>
+        <!ELEMENT suppliedIngredients (ingredientID|name|quantity)*>
+        <!ELEMENT ingredientID (#PCDATA)>
+        <!ELEMENT delivered (#PCDATA)>
+        <!ELEMENT locationRef (#PCDATA)>
+        <!ENTITY locationRef SYSTEM "Location.xml" >
+        ]>
 <SupplyDetails>
-    <Supplier>
+    <supplier>
         <supplierId>1234567</supplierId>
         <supplierAddress>1 Grand Ave, San Luis Obispo, CA, 93405</supplierAddress>
-    </Supplier>
-    <SuppliedGoods>
-        <SuppliedPackagedGoods>
+    </supplier>
+    <suppliedGoods>
+        <suppliedPackagedGoods>
             <packagedGoodId>111222</packagedGoodId>
             <name>Tumeric Shot</name>
             <quantity>50</quantity>
-        </SuppliedPackagedGoods>
-        <SuppliedPackagedGoods>
+        </suppliedPackagedGoods>
+        <suppliedPackagedGoods>
             <packagedGoodId>111333</packagedGoodId>
             <name>Belgium Waffle</name>
             <quantity>20</quantity>
-        </SuppliedPackagedGoods>
-        <SuppliedIngredients>
+        </suppliedPackagedGoods>
+        <suppliedIngredients>
             <ingredientID>1212121</ingredientID>
             <name>Banana</name>
             <quantity>50</quantity>
-        </SuppliedIngredients>
-        <SuppliedIngredients>
+        </suppliedIngredients>
+        <suppliedIngredients>
             <ingredientID>1313131</ingredientID>
             <name>Frozen Blueberries</name>
             <quantity>20</quantity>
-        </SuppliedIngredients>
-        <SuppliedIngredients>
+        </suppliedIngredients>
+        <suppliedIngredients>
             <ingredientID>1414141</ingredientID>
             <name>Frozen Mango</name>
             <quantity>30</quantity>
-        </SuppliedIngredients>
-    </SuppliedGoods>
-    <Delivered>true</Delivered>
-    <LocationRef ref="/location"></LocationRef>
+        </suppliedIngredients>
+    </suppliedGoods>
+    <delivered>true</delivered>
+    <locationRef>
+        &locationRef;
+    </locationRef>
 </SupplyDetails>
