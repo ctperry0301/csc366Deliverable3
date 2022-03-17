@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE SupplyDetails [
-        <!ELEMENT SupplyDetails (supplier|suppliedGoods|delivered|locationRef)*>
+        <!ELEMENT SupplyDetails (supplier|suppliedGoods|delivered|deliveryDate|locationRef)*>
         <!ELEMENT supplier (supplierId|supplierAddress)*>
         <!ELEMENT supplierId (#PCDATA)>
         <!ELEMENT supplierAddress (#PCDATA)>
@@ -12,6 +12,7 @@
         <!ELEMENT suppliedIngredients (ingredientID|name|quantity)*>
         <!ELEMENT ingredientID (#PCDATA)>
         <!ELEMENT delivered (#PCDATA)>
+        <!ELEMENT deliveryDate (#PCDATA)>
         <!ELEMENT locationRef (#PCDATA)>
         <!ENTITY locationRef SYSTEM "Location.xml" >
         ]>
@@ -48,6 +49,7 @@
         </suppliedIngredients>
     </suppliedGoods>
     <delivered>true</delivered>
+    <deliveryDate>02/04/2022</deliveryDate>
     <locationRef>
         &locationRef;
     </locationRef>
